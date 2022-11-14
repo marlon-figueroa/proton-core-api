@@ -18,11 +18,11 @@ use App\Http\Controllers\ArticuloController;
 */
 
 Route::group(['prefix' => 'api'], function () {
-    Route::apiResource('/marcas', 'MarcaController');
-    Route::apiResource('/medidas', 'MedidaController');
-    Route::apiResource('/categorias', 'CategoriaController');
-    Route::apiResource('/documentos', 'DocumentoController');
-    Route::apiResource('/articulos', 'ArticuloController');
+    Route::apiResource('/marcas', MarcaController::class);
+    Route::apiResource('/medidas', MedidaController::class);
+    Route::apiResource('/categorias', CategoriaController::class);
+    Route::apiResource('/documentos', DocumentoController::class);
+    Route::apiResource('/articulos', ArticuloController::class);
 });
 
 
