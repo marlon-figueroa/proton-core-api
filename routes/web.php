@@ -17,10 +17,14 @@ use App\Http\Controllers\ArticuloController;
 |
 */
 
-Route::apiResource('/api/marcas', MarcaController::class);
-Route::apiResource('/api/medidas', MedidaController::class);
-Route::apiResource('/api/categorias', CategoriaController::class);
-Route::apiResource('/api/articulos', ArticuloController::class);
+Route::group(['prefix' => 'api'], function () {
+    Route::apiResource('/marcas', MarcaController::class);
+    Route::apiResource('/medidas', MedidaController::class);
+    Route::apiResource('/categorias', CategoriaController::class);
+    Route::apiResource('/documentos', DocumentoController::class);
+    Route::apiResource('/articulos', ArticuloController::class);
+});
+
 
 Route::get('/', function () {
     return view('welcome');
