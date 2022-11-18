@@ -14,7 +14,7 @@ class CategoriaController extends Controller
      */
     public function index()
     {
-        return Categoria::where('estado', 1)->get();
+        return Categoria::where('estado',1)->get();
     }
 
     /**

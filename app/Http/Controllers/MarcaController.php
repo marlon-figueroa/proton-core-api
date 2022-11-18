@@ -14,7 +14,7 @@ class MarcaController extends Controller
      */
     public function index()
     {
-        return Marca::where('estado', 1)->get();
+        return Marca::where('estado',1)->get();
     }
 
     /**
@@ -29,6 +29,7 @@ class MarcaController extends Controller
         $Marca->nombre = $request->nombre;
         $Marca->save();
         return $Marca;
+
     }
 
     /**

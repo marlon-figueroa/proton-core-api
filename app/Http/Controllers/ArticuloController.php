@@ -14,7 +14,7 @@ class ArticuloController extends Controller
      */
     public function index()
     {
-        return Articulo::with(['Marca', 'Medida', 'Categoria'])->where('estado', 1)->get();
+        return Articulo::with(['Marca','Medida','Categoria'])->where('estado',1)->get();
     }
 
     /**

@@ -14,7 +14,7 @@ class MedidaController extends Controller
      */
     public function index()
     {
-        return Medida::where('estado', 1)->get();
+        return Medida::where('estado',1)->get();
     }
 
     /**
@@ -40,6 +40,7 @@ class MedidaController extends Controller
      */
     public function show(Medida $medida)
     {
+
         return $medida;
     }
 

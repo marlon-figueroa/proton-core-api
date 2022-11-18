@@ -17,4 +17,7 @@ class Articulo extends Model
     public function Categoria(){
         return $this->belongsTo(Categoria::class);
     }
+    public function Inventarios(){
+        return $this->hasMany(Inventario::class);
+    }
 }
