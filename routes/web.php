@@ -32,7 +32,7 @@ Route::group(['prefix' => 'api'], function () {
     Route::apiResource('/documentos', DocumentoController::class);
     Route::apiResource('/articulos', ArticuloController::class);
     Route::get('/inventarios/kardex/{articulo}', 'App\Http\Controllers\InventarioController@kardex');
-    Route::apiResource('/inventario', InventarioController::class);
+    Route::apiResource('/inventarios', InventarioController::class);
     Route::apiResource('/compras', CompraController::class);
     Route::apiResource('/ventas', VentaController::class);
     Route::apiResource('/sucursals', SucursalController::class);
